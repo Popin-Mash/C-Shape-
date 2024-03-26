@@ -1,0 +1,80 @@
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\appsettings.json
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\DemoAPI.exe
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\DemoAPI.deps.json
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\DemoAPI.runtimeconfig.json
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\DemoAPI.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\DemoAPI.pdb
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\DemoAPI.csproj.AssemblyReference.cache
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\DemoAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\DemoAPI.AssemblyInfoInputs.cache
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\DemoAPI.AssemblyInfo.cs
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\DemoAPI.csproj.CoreCompileInputs.cache
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\DemoAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\DemoAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\staticwebassets\msbuild.DemoAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.DemoAPI.props
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.DemoAPI.props
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.DemoAPI.props
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\staticwebassets.pack.json
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\scopedcss\bundle\DemoAPI.styles.css
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\DemoAPI.csproj.CopyComplete
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\DemoAPI.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\refint\DemoAPI.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\DemoAPI.pdb
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\DemoAPI.genruntimeconfig.cache
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\obj\Debug\net6.0\ref\DemoAPI.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Humanizer.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Oracle.EntityFrameworkCore.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\Oracle.ManagedDataAccess.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\System.CodeDom.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\System.DirectoryServices.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\System.DirectoryServices.Protocols.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\System.Text.Json.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\BBU\2023NewCouseSilybus\Y3S2R507\DemoAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\C Shape\DemoAPI\obj\Debug\net6.0\DemoAPI.csproj.AssemblyReference.cache
+D:\C Shape\DemoAPI\obj\Debug\net6.0\DemoAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\C Shape\DemoAPI\obj\Debug\net6.0\DemoAPI.AssemblyInfoInputs.cache
+D:\C Shape\DemoAPI\obj\Debug\net6.0\DemoAPI.AssemblyInfo.cs
+D:\C Shape\DemoAPI\obj\Debug\net6.0\DemoAPI.csproj.CoreCompileInputs.cache
+D:\C Shape\DemoAPI\obj\Debug\net6.0\DemoAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\C Shape\DemoAPI\obj\Debug\net6.0\DemoAPI.MvcApplicationPartsAssemblyInfo.cache
