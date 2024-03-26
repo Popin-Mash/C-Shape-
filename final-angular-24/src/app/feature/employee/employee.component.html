@@ -1,0 +1,343 @@
+<div class="container">
+    <!-- Button trigger modal -->
+    <div class="mt-5">
+        <div class="mb-2 ">
+            <h2>Employee Table List</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Employee Id</th>
+                  <th>Employee Name</th>
+                </tr>
+              </thead>  
+                <tbody>
+                  <tr *ngFor="let item of employeeList">
+                    <td>{{item.employeeId}}</td>
+                    <td>{{item.employeeNameKh}}</td>
+                  </tr>
+                </tbody>
+             </table>
+        </div>
+        <button type="button" class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Add
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                  <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        <span class="navbar-brand mb-0 h1">Employee Information</span>
+                    </div>
+                </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- As a heading -->
+               
+                <!-- End a hrader -->
+                <div class="modal-body">
+                    <!-- Form body -->
+                    <form [formGroup]="employeeForm">
+                        <!-- input body -->
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="form-floating mb-3">
+                            <input type="input" class="form-control" id="floatingPassword" placeholder="EmployeeId"
+                              formControlName="employeeId" />
+                            <label for="floatingPassword">EmployeeId</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-floating mb-3">
+                          <input type="input" class="form-control" id="floatingPassword" placeholder="EmployeeNameKh"
+                            formControlName="employeeNameKh" />
+                          <label for="floatingPassword">EmployeeNameKh</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating mb-3">
+                          <input type="input" class="form-control" id="floatingPassword" placeholder="EmployeeNameKh"
+                            formControlName="employeeNameEn" />
+                          <label for="floatingPassword">EmployeeNameKh</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example"
+                            formControlName="gender">
+                            <option value="" selected>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                          </select>
+                          <label for="floatingPassword">Gender</label>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    <div class="row">
+                    
+                      <div class="col-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example"
+                            >
+                            <option value="" selected>Select Department</option>
+                            <option *ngFor="let item of departmentList" value="{{item.departmentId}}">{{item.departmentNameKh}}</option>
+                          </select>
+                          <label for="floatingPassword">Department</label>
+                        </div>
+                      </div>
+
+                      <div class="col-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example"
+                            >
+                            <option value="" selected>Select Position</option>
+                            <option *ngFor="let item of positionList " value="{{item.positionId}}">{{item.positionNameKh}}</option>
+                            <!-- <option *ngFor="let item of departmentList" value="{{item.departmentId}}">{{item.departmentNameKh}}</option> -->
+                          
+                          </select>
+                          <label for="floatingPassword">Position</label>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div
+                      class="row align-items-center"
+                    >
+                      <div class="col-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example" (change)="onChangeProvine($event)">
+                            <option value="" selected>Province</option>                            
+                             <option *ngFor="let item of provineList" value="{{ item.id }}" >{{ item.nameEn }}</option>  
+                          </select>
+                          <label for="floatingPassword">Provine</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example" (change)="districkChange($event)"                            >
+                            <option *ngFor="let item of districkList" value="{{ item.id }}" >{{ item.nameEn }}</option>  
+                          
+                          </select>
+                          <label for="floatingPassword">Districk</label>
+                        </div>
+                    </div>    
+                    </div>
+
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example" (change)="commueChange($event)"
+                            >
+                            <option *ngFor="let item of commueList" value="{{ item.id }}" >{{ item.nameEn }}</option>  
+                          
+                          </select>
+                          <label for="floatingPassword">Commmue</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example"
+                          formControlName="villageId" >
+                          <option *ngFor="let item of villageList" value="{{ item.id }}" >{{ item.nameEn }}</option>  
+                          
+                          </select>
+                          <label for="floatingPassword">Village</label>
+                        </div>
+                      </div>
+                    </div>
+
+                                     <!-- End input Body -->
+                    </form>
+                    <!-- End Form -->
+                    <nav class="navbar navbar-light bg-light">
+                      <div class="container-fluid">
+                          <span class="navbar-brand mb-0 h1">Experience</span>
+                      </div>
+                  </nav>
+                  <!-- Experience -->
+                  <form [formGroup]="employeeExperiencesForm">
+                   
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-floating mb-3">
+                          <input type="input" class="form-control" id="floatingPassword" placeholder="Position"
+                            formControlName="position" />
+                          <label for="floatingPassword">Position</label>
+                        </div>
+                      </div> 
+                      <div class="col-6">
+                        <div class="form-floating mb-3">
+                          <input type="input" class="form-control" id="floatingPassword" placeholder="Salary"
+                            formControlName="salary" />
+                          <label for="floatingPassword">Salary</label>
+                        </div>
+                      </div> 
+
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="form-floating mb-3">
+                            <input type="date" class="form-control" id="floatingPassword" placeholder="Date Join"
+                              formControlName="dateJoin" />
+                            <label for="floatingPassword">Date Join</label>
+                          </div>
+                        </div> 
+                        <div class="col-6">
+                          <div class="form-floating mb-3">
+                            <input type="date" class="form-control" id="floatingPassword" placeholder="Date Resign"
+                              formControlName="dateResign" />
+                            <label for="floatingPassword">Date Resign</label>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+  
+                      </div>
+                      <div class="col-3">
+                        <button type="button" class="btn btn-primary" (click)="AddExperience()">Add Experience</button>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12">
+                          <table class="table table-s">
+                            <thead>
+                              <tr>
+                                <th>Position</th>
+                                <th>Salary</th>
+                                <th>ACTION</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let item of employeeExperiencesList">
+                                <td>{{item.position}}</td> 
+                                <td>{{item.salary}}</td> 
+                              <td>
+                                <svg style="cursor: pointer; color: red;" xmlns="http://www.w3.org/2000/svg" (click)="RemoveExper(item.position)" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                  <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                                </svg>
+                              </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- Experience -->
+
+                 <!-- Education -->
+                 <nav class="navbar navbar-light bg-light">
+                  <div class="container-fluid">
+                      <span class="navbar-brand mb-0 h1">Education</span>
+                  </div>
+              </nav>
+              <!-- Experience -->
+              <form [formGroup]="employeeEducationForm">
+               
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-floating mb-3">
+                      <select class="form-select form-select-sm" aria-label=".form-select-sm example"  formControlName="employeeEducationId"
+                      (change)="onEducationChange($event)">
+                        <option value="" selected>Education</option>                            
+                         <option *ngFor="let item of educatonLevelList" value="{{ item.educationLevelId }}" >{{ item.educationLevelName }}</option>  
+                      </select>
+                      <label for="floatingPassword">Education</label>
+                    </div>
+                  </div>
+                
+                    <div class="col-6">
+                      <div class="form-floating mb-3">
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example" (change)="onMajorChange($event)"  formControlName="majorId">
+                          <option value="" selected>Major</option>                            
+                           <option *ngFor="let item of majorList" value="{{ item.majorId }}" >{{ item.majorName }}</option>  
+                        </select>
+                        <label for="floatingPassword">Major</label>
+                      </div>
+                    </div>                
+
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-floating mb-3">
+                        <input type="input" class="form-control" id="floatingPassword" placeholder="School ​Name"
+                          formControlName="schoolName" />
+                        <label for="floatingPassword">School ​Name</label>
+                      </div>
+                    </div> 
+                    <div class="col-3">
+                      <div class="form-floating mb-3">
+                        <input type="input" class="form-control" id="floatingPassword" placeholder="Year Start"
+                          formControlName="yearStart" />
+                        <label for="floatingPassword">Year Start</label>
+                      </div>
+                    </div> 
+                    <div class="col-3">
+                      <div class="form-floating mb-3">
+                        <input type="input" class="form-control" id="floatingPassword" placeholder="Year End"
+                          formControlName="yearEnd" />
+                        <label for="floatingPassword">Year End</label>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-9">
+
+                  </div>
+                  <div class="col-3">
+                    <button type="button" class="btn btn-primary" (click)="AddEducation()">Add Education</button>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                      <table class="table table-s">
+                        <thead>
+                          <tr>
+                            <th>Education</th>
+                            <th>Major</th>
+                            <th>ACTION</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let item of employeEudcationList">
+                            <td>{{item.eduactionLevelText}}</td> 
+                            <td>{{item.majorText}}</td> 
+                          <td>
+                            <svg style="cursor: pointer; color: red;" xmlns="http://www.w3.org/2000/svg" (click)="RemoveEducation(item.educationLevelId)" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                            </svg>
+                          </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                </div>
+              </form>
+                   <!-- Experience -->
+
+                   <!-- Get List -->
+                   
+                   <!-- Get List -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" (click)="SaveEmployee()">Save</button>
+                </div>
+            </div>
+        </div>
+
+      
+</div>

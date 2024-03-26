@@ -1,0 +1,117 @@
+<div class="container">
+  <h1 class="text-center p-2">Table position List</h1>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+    (click)="AddnewPosition()">
+    Add New
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form [formGroup]="positionForm">
+          <div class="modal-body">
+            <div class="form-floating mb-3" *ngIf="positionIdVisible">
+              <input type="input" class="form-control" value="0" readonly id="floatingInput" placeholder="PositionID"
+                formControlName="positionId" />
+              <label for="floatingInput">PositionID</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="input" class="form-control" id="floatingPassword" placeholder="PositionNameKh"
+                formControlName="positionNameKh" />
+              <label for="floatingPassword">PositionKh</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="input" class="form-control" id="floatingPassword" placeholder="PositionNameEn"
+                formControlName="positionNameEn" />
+              <label for="floatingPassword">PositionNameEn</label>
+            </div>
+            <div class="form-floating mb-3">
+              <select class="form-select form-select-sm" aria-label=".form-select-sm example"
+                formControlName="isAvtive">
+                <option selected>Status</option>
+                <option value="1">Active</option>
+                <option value="2">InActive</option>
+              </select>
+              <label for="floatingPassword">Select Status</label>
+            </div>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="btnClose" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary" *ngIf="btnSave" (click)="CUDPosition('C')">
+            Save
+          </button>
+          <button type="button" class="btn btn-info" *ngIf="btnUpdate"  >
+            Update
+          </button>
+          <button type="button" class="btn btn-danger" *ngIf="btnDelete" >
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / data table list -->
+  <div class="container">
+    <table id="dtposition" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="table table-hover table">
+      <thead>
+        <tr class="table-secondary">
+          <th>PositionID</th>
+          <th>PositionKh</th>
+          <th>PositionNameEn</th>
+          <th>IsActive</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let items of positionList">
+          <td>{{ items.positionId }}</td>
+          <td>{{ items.positionNameKh }}</td>
+          <td>{{ items.positionNameEn }}</td>
+          <td>
+           
+            <div class="alert " *ngIf="items.isAvtive === 1">
+              <span class="badge rounded-pill bg-primary">Active</span>
+            </div>
+  
+             <div class="alert " *ngIf="items.isAvtive === 2">
+              <span class="badge rounded-pill bg-success">InActive</span>
+            </div>
+          
+
+          </td>
+          <td>
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Action
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    (click)="getPositionById(items.positionId, 1)">View</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    (click)="getPositionById(items.positionId, 2)">Eidte</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    (click)="getPositionById(items.positionId, 3)">Delete</a>
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
